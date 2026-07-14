@@ -4,3 +4,4 @@ price = 6000;
 x = null;
 y = undefined;
 console.log(x);
+console.log("ambuj");
