@@ -1,5 +1,7 @@
 // primitive
 
+const { useImperativeHandle } = require("react");
+
 // 7 types : string, number , Boolean , null , undefined , symbol , BigInt
 
 const score = 100
@@ -47,4 +49,31 @@ console.log(typeof myFunction);
 // symbol = symbol
 //bigInt = bigint
 
-    
+// ++++++++++++++++++++++++++++++++++
+
+// stack (primitive), Heap (Non primitive)
+
+let myYoutubename ="mayanksrivastavadotcom"
+
+letanothername = myYoutubename
+anothername ="chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "usee@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "mayank@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.gmail);
+
+//conclusion
+
+//heap => means we get the reference
+//stack  => means we get the copy of that value origin will remain same
